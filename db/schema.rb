@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_120603) do
     t.string "places_id"
     t.float "lat"
     t.float "lng"
-    t.string "type"
+    t.string "category"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -6,7 +6,7 @@ class CreateLocations < ActiveRecord::Migration[5.2]
       t.string :places_id
       t.float :lat
       t.float :lng
-      t.string :type
+      t.string :category
       t.string :description
 
       t.timestamps

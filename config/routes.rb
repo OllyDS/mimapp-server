@@ -7,7 +7,6 @@ Rails.application.routes.draw do
       
       #login checks
       post 'login', to: 'users#login'
-      get 'validate', to: 'users#validate'
     end
   end
 end
