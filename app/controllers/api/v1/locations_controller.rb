@@ -25,6 +25,13 @@ class Api::V1::LocationsController < ApplicationController
     end
 
     def destroy
+        @location = Location.find(params[:id])
+        if @location
+            @location.destroy
+            render json: { message: "Location successfully deleted." }
+        else
+            render json: { error: "Unable to delete Location." }, status: 400
+        end
     end
 
     
