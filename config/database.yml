@@ -75,11 +75,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: mimapp-server_production
-  username: mimapp-server
-  password: <%= ENV['MIMAPP-SERVER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+#
+# production:
+#   <<: *default
+#   database: mimapp-server_production
+#   username: mimapp-server
+#   password: <%= ENV['MIMAPP-SERVER_DATABASE_PASSWORD'] %>
